@@ -13,6 +13,8 @@
 		8DCF323228FBDD230071536C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF323028FBDD230071536C /* Main.storyboard */; };
 		8DCF323428FBDD260071536C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF323328FBDD260071536C /* Assets.xcassets */; };
 		8DCF323728FBDD260071536C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF323528FBDD260071536C /* LaunchScreen.storyboard */; };
+		8DCF323F28FBEB830071536C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF323E28FBEB830071536C /* TableViewController.swift */; };
+		8DCF324128FBF95F0071536C /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF324028FBF95F0071536C /* AddListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8DCF323328FBDD260071536C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DCF323628FBDD260071536C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DCF323828FBDD260071536C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCF323E28FBEB830071536C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8DCF324028FBF95F0071536C /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		8DCF321E28FBDD230071536C = {
 			isa = PBXGroup;
 			children = (
+				8DCF324028FBF95F0071536C /* AddListViewController.swift */,
+				8DCF323E28FBEB830071536C /* TableViewController.swift */,
 				8DCF322928FBDD230071536C /* TableViewApp */,
 				8DCF322828FBDD230071536C /* Products */,
 			);
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCF322F28FBDD230071536C /* ViewController.swift in Sources */,
+				8DCF324128FBF95F0071536C /* AddListViewController.swift in Sources */,
 				8DCF322B28FBDD230071536C /* AppDelegate.swift in Sources */,
 				8DCF322D28FBDD230071536C /* SceneDelegate.swift in Sources */,
+				8DCF323F28FBEB830071536C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
