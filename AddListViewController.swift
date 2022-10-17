@@ -28,13 +28,23 @@ class AddListViewController: UIViewController {
     @IBAction func addButton(_ sender: Any) {
         let userDefaults = UserDefaults.standard //そのままだと長いので変数にいれる
         
-        taskArray.append(addText.text!) //TextFieldで記入されたテキストを入れる
+        if addText.text != "" {
+            taskArray.append(addText.text!) //TextFieldで記入されたテキストを入れる
+            
+            userDefaults.set(taskArray, forKey: "add") //キー"add"で配列をUserDefaultsに保存
+            
+            self.navigationController?.popViewController(animated: true) //1つ前の画面に戻る
+        } else {
+            showAlert(title: "入力してください")
+        }
         
-        userDefaults.set(taskArray, forKey: "add") //キー"add"で配列をUserDefaultsに保存
-        
-        self.navigationController?.popViewController(animated: true) //1つ前の画面に戻る
     }
     
+    func showAlert(title:String){
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion:nil)
+    }
     
     /*
      // MARK: - Navigation
